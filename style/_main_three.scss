@@ -1,0 +1,95 @@
+.main_three {
+  background-color: rgb(20, 20, 20);
+  padding-top: 140px;
+
+  .our_values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    .complete {
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 60px;
+        color: #fff;
+      }
+      .comple {
+        padding-left: 35px;
+        color: #fff;
+        p {
+          padding-top: 10px;
+          color: darkgrey;
+        }
+      }
+    }
+    .complete:nth-child(2) {
+      padding-top: 30px;
+    }
+
+    .our_value {
+      color: #fff;
+      h6 {
+        color: darkgray;
+      }
+      p {
+        color: darkgray;
+      }
+      h1 {
+        padding-bottom: 25px;
+      }
+      .view {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        position: relative;
+        h5 {
+          font-size: 20px;
+          position: relative;
+        }
+        &::before {
+          position: absolute;
+          content: " ";
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          right: 93%;
+          bottom: 1%;
+          top: 30%;
+          background-color: rgb(84, 82, 82);
+        }
+
+        .video_box {
+          display: flex;
+          align-items: center;
+          padding-left: 120px;
+          .watch_video {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: coral;
+
+            .arrow_video {
+              position: absolute;
+              margin: 10px 0 0 22px;
+            }
+            .arrow_video::before {
+              content: " ";
+              position: absolute;
+              z-index: 1;
+              width: 0;
+              height: 0;
+              margin-top: 10px;
+              border-left: 20px solid #000;
+              border-top: 10px solid transparent;
+              border-bottom: 10px solid transparent;
+            }
+          }
+          .font_w {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}

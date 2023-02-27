@@ -1,0 +1,98 @@
+.main_second {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgb(20, 20, 20);
+  z-index: 2;
+  .project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    position: relative;
+    color: #fff;
+    .project_box {
+      img {
+        z-index: 4000;
+      }
+      video {
+        position: absolute;
+        top: 41%;
+        left: 22%;
+        width: 375px;
+        height: 430px;
+        background-color: rgb(43, 42, 42);
+        z-index: 3000;
+      }
+    }
+
+    &_box::before {
+      position: absolute;
+      content: " ";
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 15px solid coral;
+      left: 21%;
+      bottom: -14%;
+      z-index: 1;
+    }
+  }
+  .about_us {
+    h6 {
+      padding-top: 30px;
+    }
+    .nice {
+      position: relative;
+      padding-left: 60px;
+      padding-top: 25px;
+      h4 {
+        font-size: 20px;
+        color: #fff;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 26px;
+        height: 26px;
+        right: 95%;
+        border-radius: 50%;
+        background: coral;
+      }
+      h4:nth-child(2):before {
+        position: absolute;
+        content: "";
+        width: 26px;
+        height: 26px;
+        right: 95%;
+        border-radius: 50%;
+        background: coral;
+      }
+      h4:nth-child(3):before {
+        position: absolute;
+        content: "";
+        width: 26px;
+        height: 26px;
+        right: 95%;
+        border-radius: 50%;
+        background: coral;
+      }
+      h4:nth-child(4):before {
+        position: absolute;
+        content: "";
+        width: 26px;
+        height: 26px;
+        right: 95%;
+        border-radius: 50%;
+        background: coral;
+      }
+    }
+  }
+  .one_hundred {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-top: 50px;
+  }
+  span {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,117 @@
+.latest_block {
+  background-color: rgb(20, 20, 20);
+  padding-top: 90px;
+  padding-bottom: 150px;
+  .latests {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 250px;
+    div {
+      h5 {
+        color: darkgray;
+      }
+      h1 {
+        color: #fff;
+      }
+    }
+    .blog {
+      position: relative;
+      p {
+        color: darkgray;
+      }
+      h4 {
+        position: relative;
+        color: #fff;
+        padding-top: 25px;
+      }
+      &::before {
+        position: absolute;
+        content: " ";
+        width: 60px;
+        height: 60px;
+        top: 52%;
+        left: -3%;
+        background-color: rgb(84, 82, 82);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .more {
+    position: relative;
+    .marketings {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 90px;
+      padding-top: 50px;
+
+      img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+      }
+    }
+    .uidesign {
+      display: flex;
+      justify-content: flex-end;
+
+      .read_more {
+        position: absolute;
+        margin-left: 130px;
+        padding: 15px;
+        left: 50%;
+        background-color: rgb(20, 20, 20);
+        border: 1px solid rgb(20, 20, 20);
+        top: 63%;
+
+        h6 {
+          color: darkgray;
+        }
+        h2 {
+          color: #fff;
+        }
+        p {
+          color: darkgrey;
+        }
+        button {
+          cursor: pointer;
+          color: #fff;
+          border-style: none;
+          background-color: rgb(20, 20, 20);
+          img {
+            width: 20px;
+          }
+        }
+      }
+      .read_more1 {
+        position: absolute;
+        right: 52%;
+        top: 63%;
+        margin-left: 100px;
+        padding: 15px;
+        background-color: rgb(20, 20, 20);
+        border: 1px solid rgb(20, 20, 20);
+
+        h6 {
+          color: darkgray;
+        }
+        h2 {
+          color: #fff;
+        }
+        p {
+          color: darkgrey;
+        }
+        button {
+          cursor: pointer;
+          color: #fff;
+          border-style: none;
+          background-color: rgb(20, 20, 20);
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}
